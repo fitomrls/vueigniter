@@ -2,14 +2,19 @@
 <html>
 
 <head>
-  <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900" rel="stylesheet" />
-  <link href="https://cdn.jsdelivr.net/npm/@mdi/font@5.x/css/materialdesignicons.min.css" rel="stylesheet" />
-  <link href="https://cdn.jsdelivr.net/npm/vuetify@2.x/dist/vuetify.min.css" rel="stylesheet" />
+  <link href="<?php echo base_url() ?>assets/css/css?family=Roboto:100,300,400,500,700,900" rel="stylesheet" />
+  <link href="<?php echo base_url() ?>assets/css/materialdesignicons.min.css" rel="stylesheet" />
+  <link href="<?php echo base_url() ?>assets/css/vuetify.min.css" rel="stylesheet" />
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui" />
 </head>
 
 <body>
   <div id="app">
+<!--     <?php
+      echo '<pre>';
+        var_dump($categorias);
+      echo '</pre>';
+    ?> -->
     <v-app>
       <v-app-bar color="red accent-4" dark max-height="80">
         <v-app-bar-nav-icon></v-app-bar-nav-icon>
@@ -87,9 +92,9 @@
     </v-app>
   </div>
 
-  <script src="https://cdn.jsdelivr.net/npm/vue@2.x/dist/vue.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/vuetify@2.x/dist/vuetify.js"></script>
-  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  <script src="<?php echo base_url() ?>assets/js/vue.js"></script>
+  <script src="<?php echo base_url() ?>assets/js/vuetify.js"></script>
+  <script src="<?php echo base_url() ?>assets/js/axios.min.js"></script>
   <script src="<?php echo base_url() ?>assets/js/components/tipos.js"></script>
 
   <script>
